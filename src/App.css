@@ -1,38 +1,873 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #23272f;
+      color: #57bfeb;
+      width: 100vw;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .animation {
+      /* margin-right: 500px; */
+      max-width: 100%;
+      /* width: 1000px; */
+      /* padding-right: /300px; */
+        /* Set the initial width to 1000px */
+        /* Ensure responsiveness */
+        height: auto;
+        margin-left: auto;
+      /* width: 1000px; */
+      
+     }
+     .animation-container {
+       flex: 1;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+     
+     .anim-container {
+       /* width: 60%; */
+      /* width: 40%;
+        max-width: 1000px;
+        box-sizing: border-box;
+        padding: 20px; */
+        width: 70%;
+          /* Set initial width to 1000px */
+          /* max-width: 100%; */
+          box-sizing: border-box;
+          padding-right: 50px;
+        /* Adjust padding as needed */
+     }
+     .content-container {
+      width: 30%;
+        /* max-width: 600px; */
+        /* Adjust max-width based on your preference */
+        box-sizing: border-box;
+        padding: 20px;
+        /* margin-right: 10px; */
+        /* Adjust padding as needed */
+          /* width: 50%;
+          text-align: center;
+          margin: auto;
+          max-width: 800px; */
+          /* Adjust the max-width based on your preference */
+        }
+            
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+                @media (min-width: 768px) {
+                  .head {
+                    justify-content: center;
+                  }
+                 .animation {
+                   margin-left: 0;
+                   /* Reset margin for larger screens */
+                 }
+                  
+                                
+                }
+  
+    /*
+  
+  .anim-container {
+    width: 40%;
   }
+  
+  .low {
+    width: 70%;
+    margin-top: 30px;
+    position: relative;
+  } */
+  
+    .model-details-container {
+      margin-top: 180px;
+      width: 100%;
+      /* display: flex; */
+      /* flex-direction: c  olumn; */
+      align-items: center;
+      justify-content: center;
+      /* transition: transform 0.3s ease-in-out; */
+      /* transform: translateY(100%); */
+    }
+  
+    /* .model-details-container.active {
+    transform: translateY(0);
+    /* Slide up to the screen */
+  
+    /* .anim{
+    display: table-row;
+    margin-right: 1px;
+    height: max-content;
+    width: max-content
+    
+    /* scale: ; */
+  
+    .app {
+      width: 90%;
+      /* margin: 0.2rem auto; */
+    }
+  
+    .topic,
+    .topi {
+      color: white;
+      outline: #23272f;
+      text-shadow: #23272f;
+      justify-content: center;
+      margin-left: 20px;
+  
+    }
+  
+    .head {
+            display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          padding-top: 50px;
+        
+      /* display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      margin-bottom: 130px; */
+    }
+  
+    /* h2 {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5rem;
+  } */
+  
+    .model-list,
+    .featured-list,
+    .anima {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+  
+    /* .featured-card {
+      background-color: #4ac1f5;
+      color: #ffffff;
+      border-radius: 9px;
+      margin: 0.7rem;
+      padding: .9rem;
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      border: none;
+    } */
+  
+    .model-details {
+  
+      display: block;
+      margin-top: 2rem;
+    }
+  
+    .code-section {
+      position: relative;
+      margin-bottom: 20px;
+      background-color: #343a45;
+      padding: 20px;
+      border-radius: 8px;
+      max-height: 650px;
+      /* Adjust as needed for initial content height */
+      max-width: 1400px;
+      overflow-y: auto;
+      /* Enable vertical scrollbar */
+  
+      /* Optional scrollbar styling (adjust as desired) */
+      &::-webkit-scrollbar {
+        width: 10px;
+        /* Scrollbar width */
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Scrollbar thumb color */
+        border-radius: 5px;
+        /* Rounded corners for scrollbar thumb */
+      }
+  
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        /* Transparent track */
+      }
+    }
+  
+  
+    .container {
+      padding: 20px;
+      border-radius: 10px;
+    }
+  
+    .react-tabs__tab-list {
+      background-color: #343a45;
+      color: #89d2ea;
+    }
+  
+    .model-details ul li:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      /* Optional: Underline the text on hover */
+    }
+  
+    /* .code-section {
+  } */
+  
+    /* Adjust the light syntax highlighting style as needed */
+    .light-syntax-highlighter {
+      background-color: #ffffff;
+      color: #2d2d2d;
+    }
+  
+    .copy-button {
+      position: sticky;
+      /* top: ;  */
+      top: 0px;
+      left: 1000px;
+      padding: 17px;
+      cursor: pointer;
+      background-color: #23272f;
+      /* Button: background color */
+      color: #ffffff;
+      border-color: #23272f;
+      border-radius: 9px;
+  
+      border-width: 1px;
+      /* Text color */
+      border: none;
+      /* border-radius: 4px;  */
+    }
+  
+    .featured-card:hover {
+      background-color: #ffffff;
+      color: #2d2d2d;
+      /* transform: scale(1.1); */
+      border-radius: 13px;
+      /* border: #2b3a3e; */
+  
+    }
+  
+    .animam {
+      display: inline-block;
+      justify-content: space-evenly;
+      align-items: center;
+      /* Center the animations vertically */
+      width: 100vw;
+      height: 25vh;
+      margin: auto;
+    }
+  
+    .animation1,
+    .animation2,
+    .animation3 {
+      flex: 1;
+      /* Distribute available space equally among the animations */
+      max-width: 100%;
+      /* Ensure the animation does not exceed its container */
+      height: auto;
+      /* Maintain aspect ratio */
+      transition: transform 0.3s ease-in-out;
+    }
+    .modyContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+
+    
+    .mod,
+    .mody {
+      background-color: #343a45;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      width: 80%;
+      /* width: 90%; */
+    }
+    .topi {
+      /* display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 6px;
+      
+        h2 {
+          height: fit-content;
+          font-size: 24px;
+        } */
+      display: flex;  
+      margin-left: 70px;
+      margin-right: 10px;
+      margin-top: 6px;
+      height: 70px;
+      justify-content: space-between; */
+       h2 {
+        height: fit-content;
+        font-size: 36px;
+      }
+
+  
+    }
+    
+    
+      .ani1 {
+        flex: 1;
+        max-width: 90px;
+        height: 10px;
+        margin-left: 543px;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      .ani2 { 
+    
+        max-width: 100%;
+      
+        margin-right: 1px;
+        margin-left: 1px;
+        margin-bottom: 2px;
+        padding-bottom: 0px;
+        transition: transform 0.4s ease-in-out;
+        border-radius: 100px;
+        object-fit: cover;
+        object-position: 25% 25%;
+        height: 350px;
+        width: 400px;
+      }
+           
+    
+      
+
+      /* new */
+      /* .ani2 {
+        height: 300px;
+        border-radius: 8px;
+        overflow: hidden;
+      } */
+            .conte {
+              display: flex;
+              color: white;
+              margin-top: 19px;
+              /* Initial styling */
+      
+              @media (max-width: 768px) {
+                /* Adjust styles for screens smaller than 768px width */
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+              }
+            }
+    
+    
+      .btnContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* new */
+          /* margin-top: 20px; */
+      }
+    
+      .featured-card {
+        margin-left: 30px;
+        margin-top: 10px;
+        /* new */
+        /* background-color: #4ac1f5;
+          color: #ffffff;
+          border-radius: 9px;
+          margin: 0.7rem;
+          padding: 0.9rem;
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
+          transition: transform 0.3s ease-in-out;
+          border: none; */
+      }
+    
+      .try {
+        margin-top: 250px;
+        margin-left: 150px;
+        background-color: #4ac1f5;
+        color: #ffffff;
+        border-radius: 9px;
+        margin: 1px;
+        padding: 0.1px;
+        width: 100px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+       
+      }
+    
+      .try:hover {
+      
+          background-color: #ffffff;
+            color: #2d2d2d;
+            transform: scale(1.1);
+            border: #2b3a3e;
+      }
+
+        
+      .oye {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    
+    .animaml {
+      display: flex;
+      flex-direction: co;
+    }
+  
+    .animation1:hover,
+    .animation2:hover,
+    .animation3:hover,
+    .ani2:hover {
+      /* background-color: rgb(255, 150, 12); */
+      transform: scale(1.1);
+      /* Change background color on hover for each animation */
+    }
+  
+    .aa,
+    .ab,
+    .ac {
+      /* width: 1000px; */
+      margin-right: 0px;
+      border-radius: 8px;
+    }
+  
+  
+    /* Generate.css */
+    .generate-page {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      /* align-items: ; */
+    }
+  
+  
+    .upload-section {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* Center the content vertically */
+    }
+  
+    .upload-container {
+      margin-top: 20px;
+    }
+  
+    .upload-input {
+      margin-bottom: 10px;
+    }
+  
+    .image-preview-container {
+      margin-top: 20px;
+      max-height: 100%;
+    }
+  
+    .image-preview {
+      width: 100%;
+      height: auto;
+    }
+  
+    @media (min-width: 768px) {
+  
+      /* Adjust these percentages based on your preference */
+      .animation-container {
+        width: 33%;
+      }
+  
+      .upload-section {
+        width: 67%;
+      }
+    }
+  
+    .Appu {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+  
+    .Appu h1 {
+      font-size: 3rem;
+      margin: 4rem 0 0 0;
+    }
+  
+    .Appu p {
+      color: white;
+      font-size: 1.5rem;
+    }
+  
+    .input-wrapper {
+      position: relative;
+    }
+  
+    .input-wrapper label {
+      display: inline-block;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      background: #343a45;
+      color: #89d2ea;
+    }
+  
+    .input-wrapper input[type="file"] {
+      position: absolute;
+      left: 28px;
+      top: 6px;
+      z-index: -1;
+      font-size: 15px;
+      color: #ffffff;
+    }
+  
+    .result {
+      margin-top: 4rem;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .result .box-image {
+      background: #343a45;
+      height: 100%;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .result .box-p {
+      background: #ddd;
+      height: 100%;
+      padding: 1rem;
+    }
+  
+    .result img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
+    .result p {
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+  
+    @media (min-width: 1000px) {
+      .result {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  
+    .he {
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      /* width: 00%; */
+      /* margin-left: 260px; */
+    }
+  
+    /* App.css */
+    /* App.css */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content:flex-start;
+      align-items:center;
+      /* padding-left: 100px; */
+      background-color: #141618;
+      padding: 10px;
+      border-radius: 8px;
+      z-index: 1000;
+      padding-left: 90px;
+        gap: 90px;
+          /* Adjust the gap value as needed */
+      /* Ensure the navbar is above other elements */
+    }
+  
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+  
+    .navbar a:hover {
+      background-color: #2b3840;
+      color: #89d2ea;
+    }
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.content-container {
+  width: 30%;
+  text-align: center;
+  /* margin: auto; */
+  padding-left: 180px;
+}
+
+.model-details-container {
+  margin-top: 180px;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* .animation {
+  width: 1000px;
+} */
+
+.app {
+  width: 90%;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+.model-details {
+  display: block;
+  margin-top: 2rem;
+}
+
+.code-section {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #343a45;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 650px;
+  max-width: 1400px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+.container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.react-tabs__tab-list {
+  background-color: #343a45;
+  color: #89d2ea;
+}
+
+.model-details ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.light-syntax-highlighter {
+  background-color: #ffffff;
+  color: #2d2d2d;
+}
+
+.copy-button {
+  position: sticky;
+  top: 0px;
+  left: 1000px;
+  padding: 17px;
+  cursor: pointer;
+  background-color: #23272f;
+  color: #ffffff;
+  border-color: #23272f;
+  border-radius: 9px;
+  border-width: 1px;
+}
+
+.featured-card {
+  background-color: #4ac1f5;
+  color: #ffffff;
+  border-radius: 9px;
+  margin: 0.7rem;
+  padding: 0.9rem;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border: none;
+}
+
+.featured-card:hover {
+  background-color: #ffffff;
+  color: #2d2d2d;
+  transform: scale(1.1);
+  border-radius: 13px;
+}
+
+.ani2:hover {
+  transform: scale(1.1);
+}
+
+/* .ani1 {
+  flex: 1;
+  max-width: 70px;
+  height: 10px;
+  margin-left: 543px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+} */
+
+.ani2 {
+  max-width: 100%;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-bottom: 2px;
+  padding-bottom: 0px;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 100px;
+  object-fit: cover;
+  object-position: 25% 25%;
+  height: 350px;
+  width: 400px;
+}
+
+.topi {
+  display: flex;
+  margin-left: 70px;
+  margin-right: 10px;
+  margin-top: 6px;
+  height: 70px;
+  justify-content: space-between;
+
+  h2 {
+    height: fit-content;
+    font-size: 36px;
+  }
+}
+
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #343a45;
   color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 34px;
+  outline: none;
+}
+.model-card {
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.model-card.active {
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.model-card.active:hover {
+  background-color: #ffffff;
+  color: #2d2d2d;
+  transform: scale(1.1);
+  border: #2b3a3e;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.prev-button {
+  left: 0px;
+}
+
+.next-button {
+  right: 0px;
+}
+
+/* Add the rest of your CSS styles below */
+.moye {
+  display: flex;
+  /* new */
+  /* flex-direction: column; */
+  flex-direction: row;
+
+
+}
+.t3{
+  font-size: 22px;
+      padding-top: 90px;
+      font-style: italic;
+}
+.t2{
+  font-size: 88px;
+  margin-right: 50px;
+   font-weight: 600;
+   /* justify-content: center; */
+}
+.t1{
+    /* justify-content: center; */
+  font-size: 102px;
+   font-weight: 1000
+}
+@media screen and (max-width: 1000px) {
+  /* flex-direction: column; */
+  .moye{
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+    .t3 {
+      font-size: 25px;
+      padding-top: "90px";
+      font-style: "italic";
+    }
+    .btnContainer{
+      justify-content: center;
+    }
+    .ani1{
+      flex: 1 1;
+        max-width: 80px;
+        height: 195px;
+        margin-left: 128px;
+        margin-bottom: 30px;
+    }
+
 }

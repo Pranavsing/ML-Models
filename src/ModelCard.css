@@ -1,0 +1,111 @@
+/* ModelCard.css */
+
+.model-card {
+    
+    /* background-color: #4ac1f5; */
+    color: #ffffff;
+    /* border: #89d2ea; */
+    border-radius: 9px;
+    /* border: 2px solid #89d2ea; */
+    /* margin: 0.7rem; */
+    /* padding: .9rem; */
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    height:400px;
+    
+    cursor: pointer;
+  
+    /* border: 2px solid #ddd; */
+    /* margin-right: 10px; */
+    border-radius: 20px;
+    /* overflow:hidden; */
+    /* padding: 20px; */
+    display: none;
+}
+
+.model-card.active {
+    /* transform: scale(1.1); */
+    display: flex;
+    flex-direction: row;
+    /* border-color: #ffffff; */
+}
+.model-card.active:hover{
+    background-color: #ffffff;
+    color: #2d2d2d;
+    transform: scale(1.1);
+    border: #2b3a3e;
+    border-radius: 20px;
+    transition: transform 0.3s ease; 
+        
+}
+
+.animation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* Occupies half of the carousel width */
+}
+
+/* .animation {
+    width: 850px;
+    height: 850px;
+} */
+
+.model-name {
+    display:flexbox;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding-top: 20px;
+    margin-top: 38px;
+    margin-right: 60px;
+    /* Occupies half of the carousel width */
+    padding: 10px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    /* Adjust font size for better visual balance */
+}
+.content{
+    font-weight: 50;
+    font-size: 22px;
+    font-style: italic;
+}
+
+
+.carousel {
+    display: flex;
+        width: 80%;
+        /* Adjusts carousel width for buttons */
+        /* transform: translateX(-50px); */
+        /* Positions carousel initially */
+        transition: transform 0.5s ease;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #343a45;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 34px;
+    outline: none;
+}
+
+.prev-button {
+    left: 0px;
+}
+
+.next-button {
+    right: 0px;
+}
+/* ModelCard.css */
+
