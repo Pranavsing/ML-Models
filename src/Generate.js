@@ -15,12 +15,10 @@ function Generate() {
     if (!selectedImage) return;
 
     setIsProcessing(true);
-    console.log("Hello");
     try {
       await worker.load();
       await worker.loadLanguage("eng");
       await worker.initialize("eng");
-      console.log("Abhirvey E cell");
       // Perform image-to-text conversion using Tesseract.js
       const { data } = await worker.recognize(selectedImage);
       console.log(data);
@@ -29,7 +27,6 @@ function Generate() {
       console.error("Error during image-to-text conversion:", error);
       setTextResult("Error during conversion. Please try again.");
     } finally {
-      console.log("Abhi");
       setIsProcessing(false);
     }
   };

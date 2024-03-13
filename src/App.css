@@ -64,6 +64,9 @@
 
                 @media (min-width: 768px) {
                   .head {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     justify-content: center;
                   }
                  .animation {
@@ -862,12 +865,4 @@ body::-webkit-scrollbar {
     .btnContainer{
       justify-content: center;
     }
-    .ani1{
-      flex: 1 1;
-        max-width: 80px;
-        height: 195px;
-        margin-left: 128px;
-        margin-bottom: 30px;
-    }
-
 }
