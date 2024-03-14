@@ -5,9 +5,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "react-tabs/style/react-tabs.css";
 import "./App.css";
-import modelCodes from "./modelCodes";
-import copy from "copy-to-clipboard";
-// Import text files
+import axios from "axios";
 import DescriptionText1 from "./Description/d1";
 import DescriptionText2 from "./Description/d2";
 import DescriptionText3 from "./Description/d3";
@@ -39,6 +37,21 @@ const ModelDetails = ({ selectedModel }) => {
 	const [useCasesOpen, setUseCasesOpen] = useState(false);
 	const [messageCopied, setMessageCopied] = useState("");
 	const [response, setResponse] = useState(false);
+	const [modelCodes,setModelCodes] = useState([]);
+	const getModelCodes = async ()=>{
+		const response = await axios.get("http://localhost:4000/models");
+		console.log(response.data)
+		if(response.status==200){
+			var x = [];
+			response.data.map((value)=>{
+				x.push(value.modelsCode);
+			})
+			setModelCodes(x);
+		}
+	}
+	useEffect(() => {
+        getModelCodes();
+    }, []);
 	const handleCopyClick = () => {
 		setMessageCopied(code.text);
 
@@ -55,7 +68,7 @@ const ModelDetails = ({ selectedModel }) => {
 		setCode((prevState) => ({ ...prevState, isOpen: false })); // Close the Code section
 		setUseCasesOpen(false); // Ensure Use Cases tab is closed
 	};
-
+	
 	const getDescriptionComponent = (id) => {
 		switch (id) {
 			case 1:
@@ -73,8 +86,7 @@ const ModelDetails = ({ selectedModel }) => {
 		setCode({ text: modelCodes[selectedModel.id - 1], isOpen: true });
 		setDescription(null);
 		setUseCasesOpen(false);
-	};
-
+	};	
 	const loadScenario1 = () => {
 		setDescription(null);
 		setScenario1({
@@ -84,6 +96,7 @@ const ModelDetails = ({ selectedModel }) => {
 		setCode({ isOpen: false }); // Make sure to set isOpen to false only for the code section
 		setUseCasesOpen(true);
 	};
+    
 
 	useEffect(() => {
 		loadDescription();

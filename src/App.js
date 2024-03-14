@@ -18,14 +18,12 @@ const App = () => {
 		if (response.status == 200) {
 			setModels(response.data);
 		}
-		console.log(response);
 	};
 	const getFeaturedModels = async () => {
 		const response = await axios.get("http://localhost:4000/featuredModels");
 		if (response.status === 200) {
 			setFeaturedModels(response.data);
 		}
-		console.log(response);
 	};
 	const [selectedModel, setSelectedModel] = useState(null);
 
@@ -36,7 +34,6 @@ const App = () => {
 		getModels();
 		getFeaturedModels();
 	}, []);
-	console.log(featuredModels,models)
 	const scrollRef = useRef(null);
 
 	const scrollToSection = (sectionId) => {

@@ -4,7 +4,6 @@ const d1 = () => {
   return (
     <div>
       <br></br>
-      {/* <br></br> */}
       <div className="he">
         <h1>Image-to-Text Model Description</h1>
       </div>
