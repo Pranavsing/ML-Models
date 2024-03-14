@@ -3,7 +3,6 @@ import React from "react";
 const s11 = () => {
   return (
     <div>
-      {/* <br></br> */}
       <br></br>
       <div className="he">
         <h1 className="he">Assistive Technology for the Visually Impaired</h1>

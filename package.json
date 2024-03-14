@@ -10,6 +10,7 @@
     "clipboard-copy": "^4.0.1",
     "clipboard-polyfill": "^4.0.2",
     "copy-to-clipboard": "^3.3.3",
+    "html-react-parser": "^5.1.8",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
