@@ -15,15 +15,9 @@
     }
     
     .animation {
-      /* margin-right: 500px; */
       max-width: 100%;
-      /* width: 1000px; */
-      /* padding-right: /300px; */
-        /* Set the initial width to 1000px */
-        /* Ensure responsiveness */
         height: auto;
         margin-left: auto;
-      /* width: 1000px; */
       
      }
      .animation-container {
@@ -34,31 +28,14 @@
      }
      
      .anim-container {
-       /* width: 60%; */
-      /* width: 40%;
-        max-width: 1000px;
-        box-sizing: border-box;
-        padding: 20px; */
         width: 70%;
-          /* Set initial width to 1000px */
-          /* max-width: 100%; */
           box-sizing: border-box;
           padding-right: 50px;
-        /* Adjust padding as needed */
      }
      .content-container {
       width: 30%;
-        /* max-width: 600px; */
-        /* Adjust max-width based on your preference */
         box-sizing: border-box;
         padding: 20px;
-        /* margin-right: 10px; */
-        /* Adjust padding as needed */
-          /* width: 50%;
-          text-align: center;
-          margin: auto;
-          max-width: 800px; */
-          /* Adjust the max-width based on your preference */
         }
             
 
@@ -71,50 +48,25 @@
                   }
                  .animation {
                    margin-left: 0;
-                   /* Reset margin for larger screens */
                  }
                   
                                 
                 }
   
-    /*
   
-  .anim-container {
-    width: 40%;
-  }
   
-  .low {
-    width: 70%;
-    margin-top: 30px;
-    position: relative;
-  } */
   
     .model-details-container {
       margin-top: 180px;
       width: 100%;
-      /* display: flex; */
-      /* flex-direction: c  olumn; */
       align-items: center;
       justify-content: center;
-      /* transition: transform 0.3s ease-in-out; */
-      /* transform: translateY(100%); */
     }
   
-    /* .model-details-container.active {
-    transform: translateY(0);
-    /* Slide up to the screen */
-  
-    /* .anim{
-    display: table-row;
-    margin-right: 1px;
-    height: max-content;
-    width: max-content
     
-    /* scale: ; */
   
     .app {
       width: 90%;
-      /* margin: 0.2rem auto; */
     }
   
     .topic,
@@ -134,16 +86,8 @@
           flex-wrap: wrap;
           padding-top: 50px;
         
-      /* display: flex;
-      flex-direction: row;
-      margin-top: 100px;
-      margin-bottom: 130px; */
     }
   
-    /* h2 {
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 0.5rem;
-  } */
   
     .model-list,
     .featured-list,
@@ -153,18 +97,6 @@
     }
   
   
-    /* .featured-card {
-      background-color: #4ac1f5;
-      color: #ffffff;
-      border-radius: 9px;
-      margin: 0.7rem;
-      padding: .9rem;
-      width: 200px;
-      text-align: center;
-      cursor: pointer;
-      transition: transform 0.3s ease-in-out;
-      border: none;
-    } */
   
     .model-details {
   
@@ -179,27 +111,20 @@
       padding: 20px;
       border-radius: 8px;
       max-height: 650px;
-      /* Adjust as needed for initial content height */
       max-width: 1400px;
       overflow-y: auto;
-      /* Enable vertical scrollbar */
   
-      /* Optional scrollbar styling (adjust as desired) */
       &::-webkit-scrollbar {
         width: 10px;
-        /* Scrollbar width */
       }
   
       &::-webkit-scrollbar-thumb {
         background-color: rgba(255, 255, 255, 0.5);
-        /* Scrollbar thumb color */
         border-radius: 5px;
-        /* Rounded corners for scrollbar thumb */
       }
   
       &::-webkit-scrollbar-track {
         background-color: transparent;
-        /* Transparent track */
       }
     }
   
@@ -217,13 +142,8 @@
     .model-details ul li:hover {
       cursor: pointer;
       text-decoration: underline;
-      /* Optional: Underline the text on hover */
     }
   
-    /* .code-section {
-  } */
-  
-    /* Adjust the light syntax highlighting style as needed */
     .light-syntax-highlighter {
       background-color: #ffffff;
       color: #2d2d2d;
@@ -231,29 +151,23 @@
   
     .copy-button {
       position: sticky;
-      /* top: ;  */
       top: 0px;
       left: 1000px;
       padding: 17px;
       cursor: pointer;
       background-color: #23272f;
-      /* Button: background color */
       color: #ffffff;
       border-color: #23272f;
       border-radius: 9px;
   
       border-width: 1px;
-      /* Text color */
       border: none;
-      /* border-radius: 4px;  */
     }
   
     .featured-card:hover {
       background-color: #ffffff;
       color: #2d2d2d;
-      /* transform: scale(1.1); */
       border-radius: 13px;
-      /* border: #2b3a3e; */
   
     }
   
@@ -261,7 +175,6 @@
       display: inline-block;
       justify-content: space-evenly;
       align-items: center;
-      /* Center the animations vertically */
       width: 100vw;
       height: 25vh;
       margin: auto;
@@ -271,11 +184,8 @@
     .animation2,
     .animation3 {
       flex: 1;
-      /* Distribute available space equally among the animations */
       max-width: 100%;
-      /* Ensure the animation does not exceed its container */
       height: auto;
-      /* Maintain aspect ratio */
       transition: transform 0.3s ease-in-out;
     }
     .modyContainer {
@@ -293,21 +203,11 @@
       background-color: #343a45;
       padding: 10px;
       border-radius: 8px;
-      margin-top: 10px;
+      margin-top: 100px;
       width: 80%;
-      /* width: 90%; */
     }
     .topi {
-      /* display: flex;
-        justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 6px;
       
-        h2 {
-          height: fit-content;
-          font-size: 24px;
-        } */
       display: flex;  
       margin-left: 70px;
       margin-right: 10px;
@@ -351,20 +251,12 @@
     
       
 
-      /* new */
-      /* .ani2 {
-        height: 300px;
-        border-radius: 8px;
-        overflow: hidden;
-      } */
             .conte {
               display: flex;
               color: white;
               margin-top: 19px;
-              /* Initial styling */
       
               @media (max-width: 768px) {
-                /* Adjust styles for screens smaller than 768px width */
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
@@ -377,24 +269,11 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        /* new */
-          /* margin-top: 20px; */
       }
     
       .featured-card {
         margin-left: 30px;
         margin-top: 10px;
-        /* new */
-        /* background-color: #4ac1f5;
-          color: #ffffff;
-          border-radius: 9px;
-          margin: 0.7rem;
-          padding: 0.9rem;
-          width: 100%;
-          text-align: center;
-          cursor: pointer;
-          transition: transform 0.3s ease-in-out;
-          border: none; */
       }
     
       .try {
@@ -437,21 +316,17 @@
     .animation2:hover,
     .animation3:hover,
     .ani2:hover {
-      /* background-color: rgb(255, 150, 12); */
       transform: scale(1.1);
-      /* Change background color on hover for each animation */
     }
   
     .aa,
     .ab,
     .ac {
-      /* width: 1000px; */
       margin-right: 0px;
       border-radius: 8px;
     }
   
   
-    /* generate */
     /* Generate.css */
     .generate-page {
       display: flex;
@@ -461,19 +336,22 @@
 
   .ann{
     margin-left: 40px;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 40px;
   }
   .animation-container{
     margin-left: 40px;
     margin-right: 80px;
   }
     .upload-section {
-      /* margin-right: -286px; */
       flex: 1;
       padding: 40px;
       box-sizing: border-box;
       display: flex;
+
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
     .upload-container {
       margin-top: 20px;
@@ -481,13 +359,9 @@
     
     .upload-input {
       margin-bottom: 10px;
-      /* justify-content: center; */
-      /* align-items: center; */
     }
     
     .image-preview-container {
-      /* align-items: flex-end; */
-      /* justify-content:flex-end; */
       margin-top: 20px;
       max-height: 100%;
     }
@@ -530,21 +404,15 @@
     font-size: 1rem;
   }
   .box-p{
-    /* padding-bottom: 40px;
-    padding-top: 20px; */
+    padding-top: 20px; 
     margin-bottom: 40px;
     margin-top: 20px;
   }
-  /* .box-image{
-
-  } */
 
 
         /* Generate.css */
     
         .generate-page.show-preview {
-          /* flex-direction: column;
-           */
           display: flex;
             flex-direction: column;
             align-items: center;
@@ -560,12 +428,13 @@
         .generate-page.show-preview .upload-section {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         height: 100vh;
         flex-wrap: nowrap;
         padding-top: 90px;
         margin-bottom: 40px;
+        width: 100%;
         }
     
         .generate-page.show-preview .result {
@@ -610,7 +479,6 @@
         }
     @media (min-width: 768px) {
   
-      /* Adjust these percentages based on your preference */
       .animation-container {
         width: 33%;
       }
@@ -622,7 +490,7 @@
   
     .Appu {
       max-width: 950px;
-      margin: 0 auto;
+      margin: 0 0;
     }
   
     .Appu h1 {
@@ -699,12 +567,8 @@
       justify-content: center;
       align-items: center;
       align-content: center;
-      /* width: 00%; */
-      /* margin-left: 260px; */
     }
   
-    /* App.css */
-    /* App.css */
     .navbar {
       position: fixed;
       top: 0;
@@ -713,15 +577,12 @@
       display: flex;
       justify-content:flex-start;
       align-items:center;
-      /* padding-left: 100px; */
       background-color: #141618;
       padding: 10px;
       border-radius: 8px;
       z-index: 1000;
       padding-left: 90px;
         gap: 90px;
-          /* Adjust the gap value as needed */
-      /* Ensure the navbar is above other elements */
     }
   
     .navbar a {
@@ -745,7 +606,6 @@ body::-webkit-scrollbar {
 .content-container {
   width: 30%;
   text-align: center;
-  /* margin: auto; */
   padding-left: 180px;
 }
 
@@ -756,9 +616,6 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-/* .animation {
-  width: 1000px;
-} */
 
 .app {
   width: 90%;
@@ -767,7 +624,7 @@ body::-webkit-scrollbar {
 .head {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 130px;
   margin-bottom: 130px;
 }
 
@@ -857,14 +714,6 @@ body::-webkit-scrollbar {
   transform: scale(1.1);
 }
 
-/* .ani1 {
-  flex: 1;
-  max-width: 70px;
-  height: 10px;
-  margin-left: 543px;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease-in-out;
-} */
 
 .ani2 {
   max-width: 100%;
@@ -945,11 +794,9 @@ body::-webkit-scrollbar {
   right: 0px;
 }
 
-/* Add the rest of your CSS styles below */
 .moye {
   display: flex;
-  /* new */
-  /* flex-direction: column; */
+  margin-top: 30px;
   flex-direction: row;
 
 
@@ -963,15 +810,21 @@ body::-webkit-scrollbar {
   font-size: 88px;
   margin-right: 50px;
    font-weight: 600;
-   /* justify-content: center; */
 }
 .t1{
-    /* justify-content: center; */
   font-size: 102px;
    font-weight: 1000
 }
+#featured{ 
+  margin: auto;
+}
+.conn{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
 @media screen and (max-width: 1000px) {
-  /* flex-direction: column; */
   .moye{
     display: flex;
     flex-direction: column;

@@ -29,11 +29,11 @@ const NavBar = () => {
             Browse
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/" onClick={() => scrollToSection("contact")}>
             Contact Us
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
