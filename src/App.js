@@ -98,9 +98,7 @@ const App = () => {
                     >
                       AI Models
                     </p>
-                    {/* <p style={{ fontSize: "102px", fontWeight: "1000" }}>
-                      Models
-                    </p> */}
+
                     <p
                       style={{
                         fontSize: "30px",

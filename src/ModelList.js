@@ -1,7 +1,7 @@
 // ModelList.js
 import React, { useState, useRef } from "react";
 import Lottie from "lottie-react";
-import "./ModelList.css"; // Import your CSS file
+import "./ModelList.css";
 import ModelCard from "./ModelCard";
 
 import animationImageToText from "./animation/animationImageToText.json";

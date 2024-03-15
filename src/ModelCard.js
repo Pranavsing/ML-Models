@@ -1,7 +1,7 @@
 // ModelCard.js
 import React from "react";
 import Lottie from "lottie-react";
-import "./ModelCard.css"; // Import your CSS file
+import "./ModelCard.css";
 import animationImageToText from "./animation/animationImageToText.json";
 import animationLanguage from "./animation/animationLanguage.json";
 import animationImage from "./animation/animationImage.json";

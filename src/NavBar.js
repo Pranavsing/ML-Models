@@ -1,7 +1,6 @@
 // NavBar.js
 import React from "react";
 import { Link } from "react-router-dom";
-// import "./NavBar.css";
 
 const NavBar = () => {
   const scrollToSection = (sectionId) => {
@@ -29,11 +28,6 @@ const NavBar = () => {
             Browse
           </Link>
         </li>
-        {/* <li>
-          <Link to="/" onClick={() => scrollToSection("contact")}>
-            Contact Us
-          </Link>
-        </li> */}
       </ul>
     </nav>
   );

@@ -60,9 +60,9 @@ const ModelDetails = ({ selectedModel }) => {
   };
   const loadDescription = () => {
     setDescription(allDescription[selectedModel.id - 1]);
-    setScenario1((prevState) => ({ ...prevState, isOpen: false })); // Close the Use Cases section
-    setCode((prevState) => ({ ...prevState, isOpen: false })); // Close the Code section
-    setUseCasesOpen(false); // Ensure Use Cases tab is closed
+    setScenario1((prevState) => ({ ...prevState, isOpen: false }));
+    setCode((prevState) => ({ ...prevState, isOpen: false }));
+    setUseCasesOpen(false);
   };
   const loadCode = () => {
     setCode({ text: modelCodes[selectedModel.id - 1], isOpen: true });
@@ -75,19 +75,17 @@ const ModelDetails = ({ selectedModel }) => {
       text: allScenario[selectedModel.id - 1],
       isOpen: true,
     });
-    setCode({ isOpen: false }); // Make sure to set isOpen to false only for the code section
+    setCode({ isOpen: false });
     setUseCasesOpen(true);
   };
   console.log(scenario1);
   useEffect(() => {
     loadDescription();
 
-    // Update Use Cases text when switching models
     if (useCasesOpen) {
       loadScenario1();
     }
 
-    // Update Code section when switching models
     if (code.isOpen) {
       loadCode();
     }
@@ -142,7 +140,6 @@ const ModelDetails = ({ selectedModel }) => {
                   backgroundColor: "#23272f",
                   color: "#ffffff",
                   height: "50px",
-                  //   borderColor: "#23272f",
                   border: "none",
                   borderRadius: "10px",
                   cursor: "pointer",
