@@ -114,19 +114,17 @@ const App = () => {
                   </div>
                 </div>
                 {featuredModels.length > 0 && (
-                  <div className="conn">
-                    <div
-                      id="featured"
-                      style={{
-                        width: "100%",
-                        marginTop: "20px",
-                      }}
-                    >
-                      <FeaturedList
-                        featuredModels={featuredModels}
-                        onModelClick={handleModelClick}
-                      />
-                    </div>
+                  <div
+                    id="featured"
+                    style={{
+                      width: "100%",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <FeaturedList
+                      featuredModels={featuredModels}
+                      onModelClick={handleModelClick}
+                    />
                   </div>
                 )}
                 {models.length > 0 && (

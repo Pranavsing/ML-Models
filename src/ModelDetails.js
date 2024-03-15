@@ -7,7 +7,7 @@ import "react-tabs/style/react-tabs.css";
 import "./App.css";
 import axios from "axios";
 import parse from "html-react-parser";
-
+import copy from "copy-to-clipboard";
 const ModelDetails = ({ selectedModel }) => {
   const codeRef = useRef(null);
   const [description, setDescription] = useState(null);
@@ -50,7 +50,7 @@ const ModelDetails = ({ selectedModel }) => {
   }, []);
   const handleCopyClick = () => {
     setMessageCopied(code.text);
-
+    copy(code.text);
     if (messageCopied.length > 0) {
       setResponse(true);
     }

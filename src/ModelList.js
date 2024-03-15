@@ -29,7 +29,7 @@ const ModelList = ({ models, onModelClick }) => {
   return (
     <div className="modyContainer">
       <div className="mody">
-        <div className="topic" style={{textAlign:"center"}}>
+        <div className="topic" style={{ textAlign: "center" }}>
           <h2>Browse Models</h2>
         </div>
         <div className="carousel-container">
